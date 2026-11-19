@@ -9,7 +9,10 @@
     "reset": "node scripts/restore.js",
     "restore": "node scripts/restore.js",
     "generate": "node scripts/generate.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test:ui": "playwright test",
+    "carga": "node scripts/carga.js carga",
+    "estresse": "node scripts/carga.js estresse"
   },
   "engines": {
     "node": ">=18"
