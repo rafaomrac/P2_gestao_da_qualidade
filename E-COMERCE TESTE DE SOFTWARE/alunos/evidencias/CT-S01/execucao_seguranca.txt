@@ -1,0 +1,23 @@
+﻿✔ CT-S01 passo 1 (RN-10): consulta de pedidos sem autenticação é bloqueada com HTTP 401 (276.2027ms)
+✔ CT-S01 passo 2 (RN-10): listagem de pedidos do cliente autenticado isola registros de terceiros (26.3005ms)
+✔ CT-S01 passo 3 (RN-11): cliente comum não acessa a listagem administrativa de pedidos (403) (2.9061ms)
+✔ CT-S01 passo 4 (RN-11): cliente comum não tem permissão para cadastrar novos produtos (403) (6.9268ms)
+✔ CT-S01 passo 5 (RN-11): listagem de produtos administrativos é bloqueada para clientes comuns (403) (1.7275ms)
+✔ CT-S01 passo 6 (RN-11): requisição não autenticada a rotas administrativas responde HTTP 401 (1.4999ms)
+✔ CT-S01 passo 7: tentativa de checkout sem autenticação é bloqueada com HTTP 401 (2.0985ms)
+✔ CT-S01 passo 8: administrador autenticado acessa e altera dados administrativos com sucesso (30.108ms)
+✔ CT-S02 passo 1: cadastro com e-mail malformado é rejeitado com HTTP 400 (3.0206ms)
+✔ CT-S02 passo 2: cadastro com senha curta (< 6 caracteres) é rejeitado com HTTP 400 (2.1173ms)
+✔ CT-S02 passo 3: corpo JSON malformado é rejeitado sem vazar stack trace do Node.js (1.9533ms)
+✔ CT-S02 passo 4: tentativa de SQL Injection nos campos de login é tratada com segurança (1.9385ms)
+✔ CT-S02 passo 5: payload malicioso em campo numérico de quantidade é rejeitado com HTTP 400 (2.4208ms)
+✔ CT-S02 passo 6: tag <script> em identificador de produto não é executada nem refletida (1.7153ms)
+✔ CT-S02 passo 7: tentativa de Directory Traversal no servidor estático não expõe arquivos do sistema (1.6924ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 730.2981

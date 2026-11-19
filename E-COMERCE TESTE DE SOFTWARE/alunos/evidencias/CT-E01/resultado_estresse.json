@@ -1,0 +1,80 @@
+{
+  "ambiente": {
+    "data": "2026-11-19T00:25:38.562Z",
+    "versaoNode": "v26.3.0",
+    "plataforma": "win32 10.0.26300",
+    "nucleosCpu": 16,
+    "modeloCpu": "13th Gen Intel(R) Core(TM) i5-13450HX",
+    "memoriaTotalGB": 15.7,
+    "duracaoPorEstagioSegundos": 8,
+    "alvoUrl": "http://127.0.0.1:3538",
+    "rotasTestadas": [
+      "GET /api/products/produto-teste",
+      "POST /api/cart/quote"
+    ],
+    "observacao": "Cliente e servidor executados na mesma máquina física; métricas locais para homologação."
+  },
+  "estagios": [
+    {
+      "virtualUsers": 100,
+      "durationSeconds": 8,
+      "requests": 49642,
+      "throughputRps": 6201.4,
+      "avgMs": 16.1,
+      "p95Ms": 24.13,
+      "maxMs": 71.01,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 49642
+      },
+      "label": "estresse"
+    },
+    {
+      "virtualUsers": 200,
+      "durationSeconds": 8,
+      "requests": 51068,
+      "throughputRps": 6378.7,
+      "avgMs": 31.32,
+      "p95Ms": 42.52,
+      "maxMs": 117.59,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 51068
+      },
+      "label": "estresse"
+    },
+    {
+      "virtualUsers": 400,
+      "durationSeconds": 8,
+      "requests": 41976,
+      "throughputRps": 5239.8,
+      "avgMs": 76.13,
+      "p95Ms": 114.78,
+      "maxMs": 237.96,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 41976
+      },
+      "label": "estresse"
+    }
+  ],
+  "recuperacao": {
+    "virtualUsers": 5,
+    "durationSeconds": 8,
+    "requests": 52767,
+    "throughputRps": 6595.9,
+    "avgMs": 0.76,
+    "p95Ms": 1.16,
+    "maxMs": 52.22,
+    "errors": 0,
+    "errorRatePct": 0,
+    "statusCount": {
+      "200": 52767
+    },
+    "label": "recuperação"
+  },
+  "statusSondaFinal": 200
+}
