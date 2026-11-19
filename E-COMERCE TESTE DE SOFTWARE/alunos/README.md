@@ -74,13 +74,72 @@ O arquivo consolidado guarda valores em centavos inteiros e itens de pedido em l
 
 O catálogo público lista apenas produtos ativos. O frete e os totais dos pedidos importados permanecem os do dataset, em que o frete cobrado é de R$ 20,00. Novas cotações seguem as regras descritas em REQUISITOS.md.
 
-## Testes
+## Testes e Modalidades da Avaliação P2
 
+A suíte de testes atende integralmente às exigências da avaliação P2, cobrindo todas as modalidades obrigatórias com o test runner nativo do Node.js (`node:test`).
+
+### Execução Completa da Suíte
 ```bash
 npm test
 ```
 
-A pasta `tests` traz exemplos com `node:test`. O guia para ampliá-los está em [tests/README.md](tests/README.md). As regras de negócio ficam em `src/domain` e podem ser testadas sem abrir a interface.
+### Execução por Modalidade Específica
+
+1. **Testes Unitários:**
+   ```bash
+   node --test tests/unitarios.test.js
+   ```
+
+2. **Testes de Integração (API / Banco descartável):**
+   ```bash
+   node --test tests/integracao.test.js
+   ```
+
+3. **Testes Funcionais e Regras de Negócio:**
+   ```bash
+   node --test tests/funcionais.test.js
+   ```
+
+4. **Testes de Caixa-Preta (Particionamento de Equivalência e Análise de Valor-Limite):**
+   ```bash
+   node --test tests/caixa_preta.test.js tests/caixa_preta_valores.test.js
+   ```
+
+5. **Confirmação (Reteste) e Regressão (pós-correção do BUG-01):**
+   ```bash
+   node --test tests/regressao.test.js
+   ```
+
+6. **Segurança Básica (Controle de Acesso e Sanitização de Entradas):**
+   ```bash
+   node --test tests/seguranca.test.js
+   ```
+
+7. **Desempenho — Teste de Carga Progressiva (5 a 40 usuários virtuais):**
+   ```bash
+   npm run carga
+   # ou: node scripts/carga.js carga
+   ```
+
+8. **Desempenho — Teste de Estresse e Recuperação (100 a 400 usuários virtuais):**
+   ```bash
+   npm run estresse
+   # ou: node scripts/carga.js estresse
+   ```
+
+9. **Interface e Acessibilidade (Playwright):**
+   ```bash
+   npm run test:ui
+   ```
+
+---
+
+## Entregáveis da Avaliação P2
+
+1. **Caderno de Testes:** Documentado em [CADERNO_DE_TESTES_P2.md](CADERNO_DE_TESTES_P2.md) e preenchido no modelo oficial [Caderno_de_Testes_P2_Final.docx](Caderno_de_Testes_P2_Final.docx).
+2. **Código-fonte e Scripts de Teste:** Contidos na raiz e nas pastas `src/`, `tests/` e `scripts/`.
+3. **Pasta de Evidências:** Organizada por IDs na pasta `evidencias/` (`CT-U01` a `CT-U03`, `CT-I01`, `CT-I02`, `CT-F01` a `CT-F10`, `CT-B01`, `CT-B02`, `CT-BUG01`, `CT-R`, `CT-C01`, `CT-E01`, `CT-S01`, `CT-AO1`, `CT-X01`).
+4. **Relatórios de Desempenho:** Arquivos `.json` e `.txt` detalhados em `evidencias/CT-C01/` e `evidencias/CT-E01/`.
 
 ## Volume para a prática de desempenho
 
