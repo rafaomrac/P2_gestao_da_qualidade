@@ -1,0 +1,75 @@
+{
+  "ambiente": {
+    "data": "2026-11-19T00:25:38.562Z",
+    "versaoNode": "v26.3.0",
+    "plataforma": "win32 10.0.26300",
+    "nucleosCpu": 16,
+    "modeloCpu": "13th Gen Intel(R) Core(TM) i5-13450HX",
+    "memoriaTotalGB": 15.7,
+    "duracaoPorEstagioSegundos": 8,
+    "alvoUrl": "http://127.0.0.1:3538",
+    "rotasTestadas": [
+      "GET /api/products/produto-teste",
+      "POST /api/cart/quote"
+    ],
+    "observacao": "Cliente e servidor executados na mesma máquina física; métricas locais para homologação."
+  },
+  "estagios": [
+    {
+      "virtualUsers": 5,
+      "durationSeconds": 8,
+      "requests": 54316,
+      "throughputRps": 6789.5,
+      "avgMs": 0.74,
+      "p95Ms": 1.14,
+      "maxMs": 26.57,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 54316
+      }
+    },
+    {
+      "virtualUsers": 10,
+      "durationSeconds": 8,
+      "requests": 56213,
+      "throughputRps": 7024,
+      "avgMs": 1.42,
+      "p95Ms": 2.38,
+      "maxMs": 8.68,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 56213
+      }
+    },
+    {
+      "virtualUsers": 20,
+      "durationSeconds": 8,
+      "requests": 54662,
+      "throughputRps": 6832.8,
+      "avgMs": 2.93,
+      "p95Ms": 5.62,
+      "maxMs": 22.7,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 54662
+      }
+    },
+    {
+      "virtualUsers": 40,
+      "durationSeconds": 8,
+      "requests": 54294,
+      "throughputRps": 6785.9,
+      "avgMs": 5.89,
+      "p95Ms": 9.39,
+      "maxMs": 27.69,
+      "errors": 0,
+      "errorRatePct": 0,
+      "statusCount": {
+        "200": 54294
+      }
+    }
+  ]
+}
