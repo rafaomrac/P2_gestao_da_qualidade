@@ -1,7 +1,0 @@
-CT-E01: Teste de Estresse e Recuperação (8s por estágio) - 2026-11-19T00:25:38.562Z
-VUs | Req Totais | Vazão (req/s) | Média (ms) | p95 (ms) | Máx (ms) | Erros | Taxa Erro (%) | Status HTTP
-100 (estresse) | 49642 | 6201.4 | 16.1 | 24.13 | 71.01 | 0 | 0% | {"200":49642}
-200 (estresse) | 51068 | 6378.7 | 31.32 | 42.52 | 117.59 | 0 | 0% | {"200":51068}
-400 (estresse) | 41976 | 5239.8 | 76.13 | 114.78 | 237.96 | 0 | 0% | {"200":41976}
-5 (recuperação) | 52767 | 6595.9 | 0.76 | 1.16 | 52.22 | 0 | 0% | {"200":52767}
-Sonda de saúde pós-estresse respondeu HTTP 200 em estado normalizado.
