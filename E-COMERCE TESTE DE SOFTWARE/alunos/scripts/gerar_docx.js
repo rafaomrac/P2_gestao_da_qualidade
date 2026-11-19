@@ -424,7 +424,7 @@ function main() {
   // Substituicao Seção 1 (Identificação)
   xml = xml.replace("[Nome e versão]", "Loja Aurora v1.0.0 (Node.js CommonJS)");
   xml = xml.replace("[Integrantes e turma]", "Engenharia de Software – 7º Período");
-  xml = xml.replace("[Link ou caminho]", "E-COMERCE TESTE DE SOFTWARE/alunos");
+  xml = xml.replace("[Link ou caminho]", "https://github.com/rafaomrac/P2_gestao_da_qualidade (Branch: feat/luanzin)");
   xml = xml.replace("[Datas]", "Novembro de 2026");
   xml = xml.replace("[Nome]", "Equipe de QA / Engenharia de Qualidade");
 
