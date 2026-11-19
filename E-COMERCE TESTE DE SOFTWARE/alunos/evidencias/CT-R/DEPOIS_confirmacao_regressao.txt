@@ -1,0 +1,13 @@
+﻿✔ CT-CONF01 passo 1 (BUG-01): cotacao com 6 unidades (estoque 5) e rejeitada com mensagem (116.6684ms)
+✔ CT-CONF01 passo 2 (BUG-01): finalizacao com 6 unidades (estoque 5) e rejeitada (2.6943ms)
+✔ CT-R01 (RF-05, RN-03): valores-limite validos continuam aceitos (1 e 5) e invalidos rejeitados (0, 1.5) (5.598ms)
+✔ CT-R02 (RN-01, RN-02, RN-05): desconto automatico, frete gratis e cupom percentual preservados (2.9977ms)
+✔ CT-R03 (RF-09): finalizacao valida no limite do estoque (5 de 5) continua sendo aceita (22.5726ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 382.4915

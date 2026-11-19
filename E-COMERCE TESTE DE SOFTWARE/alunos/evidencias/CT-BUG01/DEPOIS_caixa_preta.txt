@@ -1,0 +1,15 @@
+﻿✔ CT-B02 pré-condição: produto-teste com preço 150 e estoque 5 (98.7845ms)
+✔ CT-B02 quantidade -1 (Classe inválida: inteiro negativo) -> rejeitada (9.0576ms)
+✔ CT-B02 quantidade 0 (Valor-limite inferior inválido: zero) -> rejeitada (3.6884ms)
+✔ CT-B02 quantidade 1 (Valor-limite inferior válido: 1 unidade) -> aceita (subtotal R$ 150) (3.5201ms)
+✔ CT-B02 quantidade 1.5 (Classe inválida: número fracionário) -> rejeitada (4.7982ms)
+✔ CT-B02 quantidade 5 (Valor-limite superior válido: igual ao estoque físico (5)) -> aceita (subtotal R$ 750) (3.3802ms)
+✔ CT-B02 quantidade 6 (Valor-limite superior inválido: acima do estoque disponível (6)) -> rejeitada (3.0668ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 518.9676
