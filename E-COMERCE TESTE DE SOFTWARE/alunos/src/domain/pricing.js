@@ -13,7 +13,8 @@ function quoteLines({ lines, coupon = null }) {
 
   const items = [];
   for (const line of lines) {
-    const check = validateQuantity(line.quantity);
+    // RN-03 / BUG-01: Valida se a quantidade é válida e se não excede o estoque da linha
+    const check = validateQuantity(line.quantity, line.stock);
     if (!check.ok) {
       return { ok: false, message: check.message };
     }

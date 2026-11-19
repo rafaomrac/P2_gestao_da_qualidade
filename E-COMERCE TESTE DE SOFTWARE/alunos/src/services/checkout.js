@@ -42,11 +42,13 @@ function placeOrder(db, user, body) {
     }
 
     const unitPrice = resolveUnitPrice(product, item.unitPrice);
+    // Garante que o estoque seja verificado no momento do fechamento do pedido (RN-03 / BUG-01)
     lines.push({
       productId: product.id,
       name: product.name,
       unitPrice,
       quantity: item.quantity,
+      stock: product.stock,
     });
   }
 

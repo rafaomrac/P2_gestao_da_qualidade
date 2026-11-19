@@ -160,11 +160,13 @@ async function handleApi(req, res, db, url) {
         send(res, 400, { error: "Produto não encontrado." });
         return;
       }
+      // Propaga o estoque atual do catálogo para validação na cotação (RN-03 / BUG-01)
       lines.push({
         productId: product.id,
         name: product.name,
         unitPrice: product.price,
         quantity: item.quantity,
+        stock: product.stock,
       });
     }
 
