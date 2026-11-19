@@ -12,7 +12,7 @@
 | :--- | :--- |
 | **Sistema / versão** | Loja Aurora – Versão 1.0.0 (Node.js CommonJS didático) |
 | **Equipe / turma** | Engenharia de Software – 7º Período |
-| **Repositório** | `https://github.com/rafaomrac/P2_gestao_da_qualidade` (Branch: `feat/luanzin`) |
+| **Repositório** | `https://github.com/rafaomrac/P2_gestao_da_qualidade` 
 | **Período de execução** | Novembro de 2026 |
 | **Responsável pelos testes** | Equipe de Garantia da Qualidade (QA) |
 
